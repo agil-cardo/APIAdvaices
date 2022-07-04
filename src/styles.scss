@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background: rgba(76, 182, 124, 0.911);
+    font-family:monospace;
+}
+
+header {
+    display: flex;
+}
+
+footer{
+    background: #969090;
+    text-align: center;
+    padding: 1rem;
+}
+a, button {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: max-content;
+    background: rgba(216, 145, 12, 0.815);
+    color: black;
+    padding: .25rem 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    transition: .2s;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+    &:active {
+        transform: scale(.98);
+    }
+
+}
+
+.advice-text {
+    font-size: 2rem;
+    min-width: 45rem;
+    margin: 1rem 2rem 5rem 2rem;
+}
